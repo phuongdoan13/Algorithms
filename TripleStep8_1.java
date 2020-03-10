@@ -10,14 +10,14 @@ public class TripleStep8_1{
     }
 
     public static int countWaysBruteForce(int n) {
-        // O(3^n)
+        // O(3^n) Since every branch will have 3 smaller branches
         if(n < 0)return 0; // could be 1 for n =0;
         else if(n == 0) return 1;
         else return countWaysBruteForce(n-1)+ countWaysBruteForce(n-2) + countWaysBruteForce(n-3);
     }
     
     public static int countWaysMem(int n, int[] memo) {
-        // O 
+        // O(n) 
         if(n < 0)
             return 0;
         else if(n ==0) 
