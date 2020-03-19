@@ -1,10 +1,8 @@
 import java.util.*;
 
 public class P1_2_CheckPermutation{
-    //Problem: Implemennt an algorithm to determine 
-    //if a string has all unique charcters. 
-    //What if you cannot use additional data structures?
-    
+    //Problem: Given two strings, write a method to decide 
+    //if one is a permutation of the other
     public static void main(String[] args) {
        System.out.println(isPermutatedSort("abcdefg", "abcdegf"));
        System.out.println(isPermutatedCount("abc", "cba"));
