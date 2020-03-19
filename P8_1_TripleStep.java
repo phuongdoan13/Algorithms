@@ -1,6 +1,6 @@
 
 import java.util.*;
-public class TripleStep8_1{
+public class P8_1_TripleStep{
     public static void main(String[] args) {
         int n = 5;
         System.out.println(countWaysBruteForce(n));

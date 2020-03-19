@@ -1,5 +1,5 @@
 import java.util.*;
-public class IsUnique1_1{
+public class P1_1_IsUnique{
     //Problem: Implemennt an algorithm to determine 
     //if a string has all unique charcters. 
     //What if you cannot use additional data structures?
@@ -16,9 +16,5 @@ public class IsUnique1_1{
             else isUniqueChar[ascii] = false;
         }
         return true;
-    }
-    
-    
-    
-    
+    } 
 }
