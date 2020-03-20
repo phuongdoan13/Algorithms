@@ -10,8 +10,26 @@ public class P1_3_URLify{
     }
 
     //Cheating method using String array
-    static String urlify(String s, int truelen){
+    static String urlifyCheat(String s, int truelen){
         return String.join("%20",s.trim().split(" "));
+    }
+
+    static String urlify(String s, int truelen){
+        char[] cArr = new char[s.length()];
+        for(int i = 0; i < s.length(); i++){
+            char currentChar = s.charAt(i);
+            if(currentChar == ' '){
+                cArr[i] = '%';
+                cArr[i+1] = '2';
+                cArr[i+2] = '0';
+                i += 1; 
+            }else{
+                cArr[i] = currentChar;
+            }
+        }
+
+        String str = new String(cArr);
+        return str;
     }
 
     
